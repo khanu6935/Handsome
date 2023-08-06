@@ -32,6 +32,33 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.blue-gradient-text {
+  background: linear-gradient(
+    158deg,
+    #1d5bbf 0%,
+    #1d5bbf 0.01%,
+    #28a2a4 46.67%,
+    #0c7fda 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.green-gradient-text {
+  background: linear-gradient(158deg, #046648 0%, #28a43c 46.67%, #0cda46 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.pink-gradient-text {
+  background: var(
+    --li-3,
+    linear-gradient(158deg, #edd1d1 0%, #fff 46.67%, #cb7b7a 100%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 .switch {
   display: flex;
@@ -43,7 +70,34 @@ body {
 .switch[data-isOn="true"] {
   justify-content: flex-end;
 }
-
 .testimonial-inner {
   box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.word-swap {
+  position: relative;
+}
+
+.word {
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: fadeInOut 4s infinite;
+  opacity: 0;
+}
+
+.word:nth-child(2) {
+  animation-delay: 2s;
 }
