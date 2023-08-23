@@ -3,16 +3,16 @@ import { Images } from "../assets/Images";
 export default function Footer() {
   return (
     <>
-      <section className="footer-section bg-[#09002C] ">
+      <section className="footer-section bg-[#09002C] font-[Poppins]">
         <div className="container mx-auto">
-          <div className="flex flex-col px-5 lg:px-0 xl:flex-row gap-[40px] xl:gap-[141px] pb-[63px] border-b-2 border-white">
+          <div className="flex flex-col px-5 lg:px-0 xl:flex-row gap-[30px] md:gap-[40px] xl:gap-[141px] pb-[63px] border-b-2 border-white">
             <div className="w-full md:max-w-1/2 xl:max-w-1/3">
               <img
                 src={Images.footerLogo}
                 alt=""
-                className="w-[361px] h-[55px]"
+                className="w-[200px] md:w-[361px] h-[40px] md:h-[55px]"
               />
-              <p className="mt-1 text-white text-[22px] leading-[33px] font-[400] ">
+              <p className="mt-1 text-white text-[16px] 2xl:text-[22px] leading-[33px] font-[400] ">
                 HandSome, société immatriculée au registre du commerce et des
                 sociétés de Paris sous le numéro 852 929 694, est enregistrée
                 auprès de l'Autorité de Contrôle Prudentiel et de Résolution
@@ -22,29 +22,31 @@ export default function Footer() {
               </p>
             </div>
             <div className="w-full md:max-w-1/2 xl:max-w-1/3 flex flex-col gap-[32px]">
-              <ul className="text-white text-[24px] tracking-[0.72px] font-[400] ">
-                <li className="pb-[32px]">
+              <ul className="text-white text-[16px] 2xl:text-[24px] tracking-[0.72px] font-[400] ">
+                <li className="pb-[18px] lg:pb-[32px]">
                   Politique de confidentialité Handsome
                 </li>
-                <li className="pb-[32px]">Handsome CGU</li>
-                <li className="pb-[32px]">
+                <li className="pb-[18px] lg:pb-[32px]">Handsome CGU</li>
+                <li className="pb-[18px] lg:pb-[32px]">
                   Politique de confidentialité Treezor
                 </li>
-                <li className="pb-[32px]">Mentions légales Handsome</li>
+                <li className="pb-[18px] lg:pb-[32px]">
+                  Mentions légales Handsome
+                </li>
                 <li className="">Mentions légales Treezor</li>
               </ul>
             </div>
             <div className="w-full md:max-w-1/2 xl:max-w-1/3 flex flex-col gap-[32px]">
-              <ul className="text-white text-[24px] tracking-[0.72px] font-[400] ">
-                <li className="pb-[32px]">A props de Handsome</li>
-                <li className="pb-[32px]">HandsomeCard</li>
-                <li className="pb-[32px]">Blogs</li>
+              <ul className="text-white text-[16px] 2xl:text-[24px] tracking-[0.72px] font-[400] ">
+                <li className="pb-[18px] lg:pb-[32px]">A props de Handsome</li>
+                <li className="pb-[18px] lg:pb-[32px]">HandsomeCard</li>
+                <li className="pb-[18px] lg:pb-[32px]">Blogs</li>
                 <li>Handsome App</li>
               </ul>
             </div>
           </div>
-          <div className="flex items-center justify-between py-[32px] lg:pl-20 lg:w-1/2">
-            <div className="flex text-white">
+          <div className="flex items-center justify-between flex-col sm:flex-row py-[32px] lg:pl-20 lg:w-1/2">
+            <div className="flex text-white mb-3 sm:mb-0">
               <img src={Images.social1} alt="" className="" />
               <img src={Images.social2} alt="" className="" />
               <img src={Images.social3} alt="" className="" />

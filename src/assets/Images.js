@@ -1,5 +1,6 @@
 export const Images = {
   logo: require("../assets/images/logo.png"),
+  downArrow: require("../assets/images/down-chevron.png"),
 
   //Testimonial
   testimonialBg: require("../assets/images/div.home-testimonials.png"),
@@ -8,6 +9,8 @@ export const Images = {
   testimonial3: require("../assets/images/testimonial3.png"),
   testimonial4: require("../assets/images/testimonial4.png"),
   testimonial5: require("../assets/images/testimonial5.png"),
+  buttonArrow: require("../assets/images/Vector.png"),
+  quote: require("../assets/images/quote.png"),
   // Cards
   card1: require("../assets/images/card1.png"),
   card2: require("../assets/images/card2.png"),
