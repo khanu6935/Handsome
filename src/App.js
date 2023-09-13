@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 
 function App() {
   const { initWow } = useWow();
+  console.log("inithow");
   useEffect(() => {
     initWow();
   }, []);
